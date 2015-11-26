@@ -1,5 +1,7 @@
 package co.crazytech.jwfield;
 
+import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -97,5 +101,14 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    protected static void setLocale(Context context,String locale){
+        Locale loc = new Locale(locale);
+        Locale.setDefault(loc);
+
+        Configuration config = new Configuration();
+        config.locale = loc;
+        context.getResources().updateConfiguration(config, context.getResources().getDisplayMetrics());
     }
 }
