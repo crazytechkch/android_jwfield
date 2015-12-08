@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">JW 传道</string>
+    <string name="app_name">传道</string>
 
     <string name="action_settings">设置</string>
+    <string name="action_language">语言</string>
+
+    <string name="failed">哎呀&#8230; 出错了</string>
 
     <string name="territory_survey_form">传道地区调查表</string>
 </resources>

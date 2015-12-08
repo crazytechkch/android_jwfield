@@ -12,16 +12,9 @@
     tools:context="co.crazytech.jwfield.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+    <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/territory_survey_form"
-        android:id="@+id/textView2" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:name="co.crazytech.jwfield.terrsurvey.TerrsurveyFragment"
+        android:id="@+id/fragment" />
 </RelativeLayout>
