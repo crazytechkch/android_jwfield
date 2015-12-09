@@ -25,8 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import co.crazytech.jwfield.terrsurvey.DatabaseManager;
-import co.crazytech.jwfield.terrsurvey.Language;
+import co.crazytech.jwfield.db.DatabaseManager;
 import co.crazytech.jwfield.terrsurvey.TerrsurveyFragment;
 
 public class MainActivity extends AppCompatActivity

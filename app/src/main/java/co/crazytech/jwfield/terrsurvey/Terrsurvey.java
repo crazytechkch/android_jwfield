@@ -5,11 +5,7 @@ package co.crazytech.jwfield.terrsurvey;
  */
 public class Terrsurvey {
     private String houseNo, street1, street2;
-    private boolean en;
-    private boolean zh;
-    private boolean nh;
-    private boolean ia;
-    private boolean ml;
+    private boolean en,zh,nh,ia,ml,xx;
 
     public boolean isMl() {
         return ml;
@@ -19,7 +15,6 @@ public class Terrsurvey {
         this.ml = ml;
     }
 
-    private boolean xx;
 
     public String getHouseNo() {
         return houseNo;
