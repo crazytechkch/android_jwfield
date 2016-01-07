@@ -1,4 +1,4 @@
-package co.crazytech.jwfield;
+package co.crazytech.jwfield.terrsurvey;
 
 /**
  * Created by eric on 12/8/2015.

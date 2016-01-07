@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.widget.Toast;
 
-import co.crazytech.jwfield.DatabaseHelper;
+import co.crazytech.jwfield.db.DatabaseHelper;
 import co.crazytech.jwfield.R;
 
 public class DatabaseManager {

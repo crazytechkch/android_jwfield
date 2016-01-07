@@ -27,7 +27,6 @@ import java.util.Locale;
 
 import co.crazytech.jwfield.terrsurvey.DatabaseManager;
 import co.crazytech.jwfield.terrsurvey.Language;
-import co.crazytech.jwfield.terrsurvey.Terrsurvey;
 import co.crazytech.jwfield.terrsurvey.TerrsurveyFragment;
 
 public class MainActivity extends AppCompatActivity
