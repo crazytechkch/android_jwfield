@@ -1,4 +1,4 @@
-package co.crazytech.jwfield;
+package co.crazytech.jwfield.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
