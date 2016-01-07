@@ -27,6 +27,7 @@ import java.util.Locale;
 
 import co.crazytech.jwfield.terrsurvey.DatabaseManager;
 import co.crazytech.jwfield.terrsurvey.Language;
+import co.crazytech.jwfield.terrsurvey.Terrsurvey;
 import co.crazytech.jwfield.terrsurvey.TerrsurveyFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+        fab.setVisibility(View.GONE);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -56,12 +58,12 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
     }
 
     @Override
     public void onBackPressed() {
+        TerrsurveyFragment terserv = (TerrsurveyFragment)getSupportFragmentManager().findFragmentById(R.id.fragment);
+        if(terserv.canGoBack())terserv.goBack();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -144,6 +146,8 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 
     protected static void setLocale(Context context,String locale){
         Locale loc = new Locale(locale);
